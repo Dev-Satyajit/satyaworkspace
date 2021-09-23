@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 export default function Navbar(props) {
   return (
     <nav className="navbar navbar-expand-lg">
-      <Link className="nav-logo" to="/">
+      <Link className="nav-logo" to="/satyaworkspace">
         {/* <img src={logo} alt="" /> */}
         SatyaJit
       </Link>
@@ -22,17 +22,17 @@ export default function Navbar(props) {
       <div className="collapse navbar-collapse" id="navbarSupportedContent">
         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
           <li className="nav-item">
-            <Link className="nav-link1" to="/">
+            <Link className="nav-link1" to="/satyaworkspace">
               Home
             </Link>
           </li>
           <li className="nav-item">
-            <Link className="nav-link1" to="/">
+            <Link className="nav-link1" to="/satyaworkspace">
               Services
             </Link>
           </li>
           <li className="nav-item">
-            <Link className="nav-link1" to="/">
+            <Link className="nav-link1" to="/satyaworkspace">
               About
             </Link>
           </li>
