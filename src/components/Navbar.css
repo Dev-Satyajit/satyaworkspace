@@ -1,0 +1,86 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  padding: 0 30px;
+  border-bottom: 1px solid #e0e0e0;
+  background-color: white;
+}
+
+.nav-logo {
+  text-decoration: none;
+  font-size: 40px;
+  font-weight: 600;
+  color: blueviolet;
+  margin-right: 20px;
+  padding: 10px 0;
+}
+.nav-logo:hover{
+  color: blueviolet;
+}
+.nav-link1 {
+  text-decoration: none;
+  color: #303030;
+  font-size: 20px;
+  font-weight: 400;
+  display: inline-flex;
+  align-items: center;
+  height: 100%;
+  padding: 20px 20px;
+  transition: 0.2s;
+}
+.nav-link1:hover{
+  color: blueviolet;
+}
+
+.d-flex{
+  align-items: center;
+
+}
+
+.form-control.custom{
+  height: 80px;
+  border-radius: 0;
+  border: none;
+  font-size: 20px;
+  font-weight: 400;
+}
+.form-control.custom:focus{
+  box-shadow: none;
+}
+
+@media (max-width: 991px) {
+  .navbar {
+    padding: 0 15px;
+  }
+  .nav-logo{
+    font-size: 35px;
+  }
+  .nav-link1 {
+    width: 100%;
+    padding: 10px 0;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  .d-flex{
+    margin-bottom: 10px;
+  }
+  .form-control.custom{
+    height: 50px;
+    border-radius: 0;
+    border: none;
+  }
+  .form-control.custom:focus{
+    box-shadow: none;
+  }
+}
+
+.navbar-toggler {
+  border: none;
+}
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.fa-bars{
+  color: blueviolet;
+  font-size: 30px;
+}
