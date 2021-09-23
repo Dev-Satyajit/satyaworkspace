@@ -5,6 +5,7 @@
   /* border-bottom: 1px solid #e0e0e0; */
   box-shadow: rgba(138, 43, 226, 0.2) 0px 3px 10px;
   background-color: white;
+  z-index: 999;
 }
 
 .nav-logo {
