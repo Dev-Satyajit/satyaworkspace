@@ -1,5 +1,5 @@
 .services {
-  min-height: 768px;
+  min-height: 900px;
   height: 100vh;
   width: 100%;
   text-align: center;
@@ -30,20 +30,65 @@
   font-size: 20px;
 }
 .service-box {
+  position: relative;
   border: 1px solid blueviolet;
-  padding: 30px;
   width: 700px;
   margin: auto;
   border-radius: 20px;
   background-color: white;
+  overflow: hidden;
+  height: 700px;
 }
+
+.sec-toggler{
+  position: relative;
+  height: 60px;
+  /* border-bottom: 1px solid #e4c7ff; */
+  box-shadow: rgba(138, 43, 226, 0.2) 0px 3px 10px;
+}
+
+.sec-toggler > .btn{
+  height: 100%;
+  width: 50%;
+  border-radius: 0;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.sec-toggler > .btn:focus{
+  box-shadow: none;
+}
+
+.tg{
+  border-bottom: 2px solid blueviolet;
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
 .service-menu {
+  position: absolute;
+  top: 100px;
   margin: 0;
   padding: 0;
   display: flex;
+  width: 100%;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  transition: 0.5s;
+}
+.service-menu.sheet-menu{
+  left: -100%;
+}
+.service-menu.tool-menu{
+  left: 100%;
+}
+.service-menu.active{
+  left: 0;
 }
 .service-item {
   list-style: none;
@@ -82,5 +127,11 @@
 @media (max-width: 769px) {
   .service-box {
     width: 100%;
+  }
+  .tg{
+    transition: 0.3s;
+  }
+  .service-menu{
+    transition: 0.3s;
   }
 }

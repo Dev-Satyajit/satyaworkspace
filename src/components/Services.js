@@ -1,7 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Services.css";
 // import { Helmet } from "react-helmet";
 export default function Services() {
+  const [state1, setState1] = useState("active");
+  const [state2, setState2] = useState("");
+  const [toggler, setSoggler] = useState({ left: "0" });
+  const [active11, setActive11] = useState({ color: "blueviolet" });
+  const [active22, setActive22] = useState({ color: "#555" });
   var months = [
     "January",
     "February",
@@ -18,6 +23,34 @@ export default function Services() {
   ];
   var d = new Date();
   var monthName = months[d.getMonth()];
+
+  const setActive1 = () => {
+    setState1("active");
+    setState2("");
+    setSoggler({
+      left: "0",
+    });
+    setActive11({
+      color: "blueviolet",
+    });
+    setActive22({
+      color: "#555",
+    });
+  };
+  const setActive2 = () => {
+    setState2("active");
+    setState1("");
+    setSoggler({
+      left: "50%",
+    });
+    setActive11({
+      color: "#555",
+    });
+    setActive22({
+      color: "blueviolet",
+    });
+  };
+
   return (
     <div className="services">
       {/* <Helmet>
@@ -28,7 +61,20 @@ export default function Services() {
       </div>
       <div className="container">
         <div className="service-box">
-          <ul className="service-menu">
+          <div className="sec-toggler">
+            <div className="tg" style={toggler}></div>
+            <button
+              className="btn sheets"
+              onClick={setActive1}
+              style={active11}
+            >
+              Sheets
+            </button>
+            <button className="btn tools" onClick={setActive2} style={active22}>
+              Tools
+            </button>
+          </div>
+          <ul className={`service-menu sheet-menu ${state1}`}>
             <li className="service-item">
               <a
                 href="https://docs.google.com/spreadsheets/d/1_Tfy236aj3aip8qfJ0pbfNyzaPsKikl81uPUj_RA6Mw"
@@ -89,6 +135,28 @@ export default function Services() {
                 <i className="fas fa-file-alt"></i> Call Tracker Sheet
               </a>
             </li>
+          </ul>
+          <ul className={`service-menu tool-menu ${state2}`}>
+            <li className="service-item">
+              <a
+                href="https://mail.google.com"
+                className="service-link"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <i class="fas fa-envelope-open-text"></i> Gmail
+              </a>
+            </li>
+            <li className="service-item">
+              <a
+                href="https://docs.google.com"
+                className="service-link"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <i class="far fa-file-alt"></i> Google Docs
+              </a>
+            </li>
             <li className="service-item">
               <a
                 href="https://drive.google.com/drive/folders/1LWbDBTLu0dxUBF2rzmzMCrjQ4L44ZQ_1"
@@ -96,7 +164,27 @@ export default function Services() {
                 target="_blank"
                 rel="noreferrer"
               >
-                <i class="fab fa-google-drive"></i> {monthName} Drive
+                <i className="fab fa-google-drive"></i> {monthName} Drive
+              </a>
+            </li>
+            <li className="service-item">
+              <a
+                href="https://lg51rb1td3.labeling.us-west-2.sagemaker.aws"
+                className="service-link"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <i class="fab fa-aws"></i> Sagemaker West
+              </a>
+            </li>
+            <li className="service-item">
+              <a
+                href="https://t5y7v24dx4.labeling.ap-south-1.sagemaker.aws"
+                className="service-link"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <i class="fab fa-aws"></i> Sagemaker South
               </a>
             </li>
           </ul>
