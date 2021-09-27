@@ -144,7 +144,7 @@ export default function Services() {
                 target="_blank"
                 rel="noreferrer"
               >
-                <i class="fas fa-envelope-open-text"></i> Gmail
+                <i className="fas fa-envelope-open-text"></i> Gmail
               </a>
             </li>
             <li className="service-item">
@@ -154,7 +154,7 @@ export default function Services() {
                 target="_blank"
                 rel="noreferrer"
               >
-                <i class="far fa-file-alt"></i> Google Docs
+                <i className="far fa-file-alt"></i> Google Docs
               </a>
             </li>
             <li className="service-item">
@@ -174,7 +174,7 @@ export default function Services() {
                 target="_blank"
                 rel="noreferrer"
               >
-                <i class="fab fa-aws"></i> Sagemaker West
+                <i className="fab fa-aws"></i> Sagemaker West
               </a>
             </li>
             <li className="service-item">
@@ -184,7 +184,7 @@ export default function Services() {
                 target="_blank"
                 rel="noreferrer"
               >
-                <i class="fab fa-aws"></i> Sagemaker South
+                <i className="fab fa-aws"></i> Sagemaker South
               </a>
             </li>
           </ul>
