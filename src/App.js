@@ -13,17 +13,6 @@ function App() {
       <Router>
         <Navbar brand="SatyaJit" />
         <Services/>
-        {/* <Switch>
-        <Route exact path = "/">
-          <Home/>
-        </Route>
-        <Route exact path = "/services">
-          <Services/>
-        </Route>
-        <Route exact path = "/about">
-          <About/>
-        </Route>
-      </Switch> */}
       </Router>
     </>
   );
