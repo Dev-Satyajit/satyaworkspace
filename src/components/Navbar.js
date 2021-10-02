@@ -5,8 +5,7 @@ export default function Navbar(props) {
   return (
     <nav className="navbar navbar-expand-lg">
       <Link className="nav-logo" to="/satyaworkspace">
-        {/* <img src={logo} alt="" /> */}
-        SatyaJit
+        {props.brand}
       </Link>
       <button
         className="navbar-toggler"
@@ -44,8 +43,16 @@ export default function Navbar(props) {
             placeholder="Search"
             aria-label="Search"
           />
-          <button className="btn" style={{backgroundColor: 'blueviolet', color: 'white', borderRadius:'20px'}} type="button">
-          <i className="fas fa-search"></i>
+          <button
+            className="btn"
+            style={{
+              backgroundColor: "blueviolet",
+              color: "white",
+              borderRadius: "50%",
+            }}
+            type="button"
+          >
+            <i className="fas fa-search"></i>
           </button>
         </form>
       </div>
