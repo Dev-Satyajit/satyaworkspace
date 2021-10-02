@@ -26,7 +26,7 @@ export default function Navbar(props) {
             </Link>
           </li>
           <li className="nav-item">
-            <Link className="nav-link1" to="/satyaworkspace">
+            <Link className="nav-link1" to="/satyaworkspace/services">
               Services
             </Link>
           </li>
