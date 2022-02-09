@@ -77,7 +77,7 @@ export default function Services() {
           <ul className={`service-menu sheet-menu ${state1}`}>
             <li className="service-item">
               <a
-                href="https://docs.google.com/spreadsheets/d/1_Tfy236aj3aip8qfJ0pbfNyzaPsKikl81uPUj_RA6Mw"
+                href="#"
                 className="service-link"
                 target="_blank"
                 rel="noreferrer"
@@ -87,7 +87,7 @@ export default function Services() {
             </li>
             <li className="service-item">
               <a
-                href="https://docs.google.com/spreadsheets/d/1y5NXKMgCgbNuUTYeMnbk2KGJ_lSfvCp1ZGNh2NEvpnU"
+                href="#"
                 className="service-link"
                 target="_blank"
                 rel="noreferrer"
@@ -97,7 +97,7 @@ export default function Services() {
             </li>
             <li className="service-item">
               <a
-                href="https://docs.google.com/spreadsheets/d/1UQ-Sis33M6iDJx4vJwnvUwyBJLjHSczmyrdmhfWXF4g"
+                href="#"
                 className="service-link"
                 target="_blank"
                 rel="noreferrer"
@@ -107,7 +107,7 @@ export default function Services() {
             </li>
             <li className="service-item">
               <a
-                href="https://docs.google.com/spreadsheets/d/1uCUTpCGl0Jd7koI1fok8ft4UT_d1B6Ina_-tP2aD1kU"
+                href="#"
                 className="service-link"
                 target="_blank"
                 rel="noreferrer"
@@ -117,7 +117,7 @@ export default function Services() {
             </li>
             <li className="service-item">
               <a
-                href="https://docs.google.com/spreadsheets/d/1idFo5miNhCmsjIusixpzXZi3YXe7DIWAjHwRzl-jYgY"
+                href="#"
                 className="service-link"
                 target="_blank"
                 rel="noreferrer"
@@ -127,7 +127,7 @@ export default function Services() {
             </li>
             <li className="service-item">
               <a
-                href="https://docs.google.com/spreadsheets/d/17YnMFcqDIgw6c4P7VDiYVRbFa1eygn6dbbE2wcqSdxk"
+                href="#"
                 className="service-link"
                 target="_blank"
                 rel="noreferrer"
@@ -159,7 +159,7 @@ export default function Services() {
             </li>
             <li className="service-item">
               <a
-                href="https://drive.google.com/drive/folders/1LWbDBTLu0dxUBF2rzmzMCrjQ4L44ZQ_1"
+                href="#"
                 className="service-link"
                 target="_blank"
                 rel="noreferrer"
@@ -169,7 +169,7 @@ export default function Services() {
             </li>
             <li className="service-item">
               <a
-                href="https://lg51rb1td3.labeling.us-west-2.sagemaker.aws"
+                href="#"
                 className="service-link"
                 target="_blank"
                 rel="noreferrer"
@@ -179,7 +179,7 @@ export default function Services() {
             </li>
             <li className="service-item">
               <a
-                href="https://t5y7v24dx4.labeling.ap-south-1.sagemaker.aws"
+                href="#"
                 className="service-link"
                 target="_blank"
                 rel="noreferrer"
